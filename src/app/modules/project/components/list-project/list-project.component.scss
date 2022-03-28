@@ -1,0 +1,122 @@
+.card{
+    border:2px solid rgb(241, 189, 237);
+    margin-top: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(250, 224, 229);
+ 
+}
+
+.card-main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-left{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.card-left{
+    .per{
+        position: absolute;
+        margin-left: 35px;
+        z-index: 1;
+        margin-top: 20px;
+    };
+}
+.card-bottom{
+    border-top: 1px solid rgb(196, 188, 188);
+}
+.card-progress{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 4px solid red;
+    border-radius: 50%;
+    margin:5px;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+.card-progress span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.card-content{
+    padding: 5px 20px;
+    line-height: 20px;
+}
+.card-content p span:nth-child(1){
+    font-weight: bold;
+    font-size: 20px;
+}
+card-content p span:nth-child(2){
+    font-size: 15px;
+}
+.card-content p:nth-child(2),.card-content p:nth-child(3){
+    font-size: 13px;
+}
+.card-right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.card-right p{
+    position: absolute;
+    right: 2%;
+    top: -5%;
+}
+.card-right span{
+    margin:20px 5px 5px;
+    background-color: rgb(183, 221, 221);
+    padding: 8px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(49, 156, 163);
+}
+.card-bottom{
+    padding-top: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: end ;
+}
+.users{
+    display: flex;
+}
+.progress{
+    width: 50px;
+    height: 50px;
+}
+.users p{
+    
+    position: relative;
+    width: 18px;
+    background-color: rgb(255, 166, 0);
+    color: white;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 6, 6);
+    margin-left: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.card-bottom button{
+    background: transparent;
+    outline-color: none;
+    font-size: 25px;
+    border: none;
+    color: rgb(28, 193, 223);
+    cursor: pointer;
+    margin-left: 5px;
+    
+
+}

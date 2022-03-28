@@ -1,0 +1,34 @@
+
+<div class="create-main">
+    <form class="create" #addData="ngForm"   (submit)="submitHandler(addData)" >
+        <div class="create-action">
+            <a (click)="resetForm()">Cancel</a>
+            <button type="submit">Create</button>
+        </div>
+
+        <hr>
+        <!-- title -->
+        <label for="title">Title</label><br>
+        <input type="text" [(ngModel)]="allAssigneeList.title" name="title"><br>
+    
+        <label for="organization">Organization  </label><br>    
+        <input type="text" [(ngModel)]="allAssigneeList.organization" name="organization"><br>
+        
+         <div class="assignParent">
+            <label for="assignee">Assignee  </label>
+            <app-assignee (selectedAssinee)="selectedAssignee($event)" removeAssinee="removeAssinee($event)" ></app-assignee> 
+        </div>  
+        <br>
+        <hr>
+    
+          <label class="assignee" for="milestone"><span>MileStone</span>  <span><a (click)="milestoneFocus()">+</a></span></label> 
+         <app-milestone *ngIf="milestoneBoolen" (selectedMilestone)="selectedMilestone($event)" ></app-milestone>
+         <div  class="create-milestone">
+             <p>milestone</p>
+             <progress class="progress" value="0"></progress>
+             <p>Due by january 20,2022 <span style="color:green">0</span> % complete</p>
+             <p><strong>1 Open  </strong><strong> 0 Closed</strong></p>
+         </div>  
+    
+    </form>
+</div>

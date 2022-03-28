@@ -1,0 +1,27 @@
+
+
+
+<form >
+  <div   class="example-chip-list" appearance="fill">
+      <mat-chip-list #chipList class="assginee-list">
+                <mat-chip *ngFor="let assignee of assigneesList ; let i = index;"
+                (removed)="remove(assignee)">
+                {{assignee.initial}}
+                <button matChipRemove> <mat-icon>cancel</mat-icon> </button>
+                </mat-chip>
+                  <input
+                  name="initial"
+                  #assigneeInput
+                  [formControl]="AssigneeCtrl"
+                  [matAutocomplete]="auto"
+                  >
+      </mat-chip-list>
+
+     <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+      <mat-option  *ngFor="let assigne of filteredAssignee | async" [value]="assigne">
+        {{assigne.initial}}
+      </mat-option>
+    </mat-autocomplete>
+  </div> 
+</form>
+ 

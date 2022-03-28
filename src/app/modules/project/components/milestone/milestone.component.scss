@@ -1,0 +1,65 @@
+.milestone{
+    width:350px;
+    position: absolute;
+    background-color: white;
+    padding: 15px;
+    z-index:1;
+    box-shadow: 0px 10px 12px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.milestone{
+    .input{
+        width: 80%;
+        padding:0.6rem;
+        border-radius: 3px;
+        border: 1px solid gray;
+        outline: none;
+        margin:10px 5px;
+    }
+}
+.tabs-btn{
+    border-bottom: 1px solid gray;
+    padding-bottom:2px;
+}
+.tabs-btn{
+    input{
+        cursor: pointer;
+        margin: 10px 5px 0px;
+        padding: 5px 6px;
+        border-bottom: none;
+        outline: none;
+
+
+    }
+
+}
+.active{
+    border:1px solid rgb(47, 153, 5);
+    outline: none;
+
+}
+
+
+    .tab-open{
+        width: 90%;
+        display:flex;
+        justify-content:start;
+        align-items: center;
+        padding:10px;
+        border-bottom:1px solid gray;
+        overflow: hidden;
+    }
+    .open-content{
+        line-height:10px;
+        margin: 0px 5px;
+    
+    }   
+    .tab-open{
+        input{
+            margin: 0px 5px;
+        }
+        p:nth-last-child(2){
+            font-weight: bold;
+        }
+    }

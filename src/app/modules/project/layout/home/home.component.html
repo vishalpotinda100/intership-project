@@ -1,0 +1,22 @@
+<div class="home">
+
+    <div class="home-list">
+        <div class="home-list-title">
+            <p><strong>Project |</strong> <span> {{date | date}}</span> </p>
+            <div class="home-menu-grid">
+                <mat-icon>menu</mat-icon>
+                <mat-icon>grid_view</mat-icon>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+        <span class="filter"><p>filter</p><mat-icon>filter_list</mat-icon></span>
+        <app-list-project *ngFor="let items of projectJson" [items]="items" ></app-list-project>
+    </div>
+
+    <div class="home-create">
+        <app-create-project (createdItem)="createForm($event)" ></app-create-project>
+    </div>
+</div>
+
+
+<!-- <h1>Vishal</h1> -->

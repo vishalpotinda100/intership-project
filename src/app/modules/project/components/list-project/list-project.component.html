@@ -1,0 +1,28 @@
+<div class="card">
+    <div class="card-main">
+      <div class="card-left">
+                  <p class="per">75%</p>
+                    <mat-progress-spinner  class="progress"
+                    class="example-margin"
+                    [color]="color"
+                    [mode]="mode"
+                    [value]="75">
+                </mat-progress-spinner>
+          <div class="card-content">
+              <p><span>{{items.title}}</span> | <span>{{items.date | date }}</span></p>
+              <p>{{items.organization}} </p>
+          </div>
+      </div>
+      <div class="card-right">
+          <p><mat-icon>more_vert</mat-icon></p>
+          <span>{{cal}} Left</span>
+      </div>
+    </div>
+    
+    <div class="card-bottom">
+        <div class="users" *ngFor="let item of items.assigneList"  >
+           <p >{{item.initial}}</p>
+        </div>
+        <button><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+    </div>
+  </div>

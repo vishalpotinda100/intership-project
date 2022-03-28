@@ -1,0 +1,43 @@
+
+   <div  class="milestone"  >
+     <label for="set-mileStone">Set MileStone</label><br>
+     <input class="input" type="text"  name="milestone" placeholder="Filter-milestone">
+ 
+     <mat-tab-group>
+         <mat-tab label="Open" > 
+            <div >
+              <div *ngFor="let t of openList;let i=index" class="tab-open">  
+                 <input 
+                 type="checkbox" 
+                 [(ngModel)]="t.isChecked" 
+                 (change)="addOpen()"
+                  name="open"
+                  >
+                <div class="open-content">
+                    <p>{{t.task}}</p>
+                    <p>Due by january 20,2022</p>
+                </div> 
+             </div> 
+            </div>   
+         </mat-tab>
+
+         <mat-tab label="Closed" >
+            <div > 
+              <div *ngFor="let t of closedList;let i=index"  class="tab-open">  
+                 <input 
+                 type="checkbox" 
+                 [(ngModel)]="t.isChecked" 
+                 (change)="addClosed()"  
+                 name="closed"  
+                 >
+                <div class="open-content">
+                    <p>{{t.task}}</p>
+                    <p>Due by Feb 15,2022</p>
+                </div>
+             </div>    
+             </div> 
+         </mat-tab>
+
+       </mat-tab-group>
+ </div>
+

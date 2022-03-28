@@ -1,0 +1,77 @@
+
+
+.assignee{
+    display: flex;
+    justify-content: space-between;
+}
+.assignParent{
+    position: relative;
+}
+.assignCompo{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 45%;
+    width: 100%;
+}
+.assignee span:nth-child(2){
+    margin-left: 100px;
+    font-weight: bold;
+    
+}
+.assignee span a{
+    background: transparent;
+    outline: none;
+    border:none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.create-main{
+    width: 350px;
+    padding: 10px;
+    margin: 10px;
+}
+.create{
+    margin: 10px auto;
+}
+.create-action {
+display: flex;
+justify-content: end;
+padding-bottom: 10px;
+align-items: center;
+}
+.create-action a{
+    background: transparent;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin:0px 10px;
+}
+.create-action button:nth-child(2){
+    padding:8px 12px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+input{
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 10px;
+    outline:none;
+    border:1px solid lightgray;
+}
+.create-milestone{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.progress{
+    width: 100%;
+    padding: 10px;
+}

@@ -49,11 +49,12 @@ export class CreateProjectComponent implements OnInit {
 submitHandler(items:NgForm){
 
   const {title,organization}=items.value;
-  if(title.trim()=='' || organization.trim()==''){
-    this.toastr.error('Please fill Title and Organization', 'Title and Organization', {
-      timeOut: 5000,
-    });
-  }else if(this.allAssigneeList.assigneList.length==0){
+  if(title.trim()==''){
+    this.toastr.error('Please enter  title', 'Title is requied');
+  }else if( organization.trim()==''){
+    this.toastr.error('Please enter organization',"Oraganization is required")
+  }
+  else if(this.allAssigneeList.assigneList.length==0){
     this.toastr.error('Please select at least one assignee','Assignee')
   }else{
     this.createdItem.emit(this.allAssigneeList)

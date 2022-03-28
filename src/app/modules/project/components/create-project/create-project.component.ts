@@ -13,7 +13,8 @@ export class CreateProjectComponent implements OnInit {
   assign:boolean=false;
   milestoneBoolen:boolean=false;
   date:Date=new Date();
-
+  openCount:number=0;
+  closedCount:number=0;
    allAssigneeList:any={
     date:this.date,
     title:'',
@@ -40,9 +41,13 @@ export class CreateProjectComponent implements OnInit {
 
  selectedMilestone(milestone:any){
    this.allAssigneeList.milestoneList=milestone;
+   this.openCount=this.allAssigneeList.milestoneList.open.length;
+   this.closedCount=this.allAssigneeList.milestoneList.closed.length;
+   
  }
 
 submitHandler(items:NgForm){
+
   const {title,organization}=items.value;
   if(title.trim()=='' || organization.trim()==''){
     this.toastr.error('Please fill Title and Organization', 'Title and Organization', {
@@ -53,6 +58,7 @@ submitHandler(items:NgForm){
   }else{
     this.createdItem.emit(this.allAssigneeList)
   }
+
 
 
 }

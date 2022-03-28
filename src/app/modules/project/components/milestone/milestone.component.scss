@@ -12,10 +12,16 @@
     .input{
         width: 80%;
         padding:0.6rem;
-        border-radius: 3px;
+        border-radius: 5px;
         border: 1px solid gray;
         outline: none;
         margin:10px 5px;
+    }
+    a{
+        text-decoration: underline;
+        display: flex;
+        margin: -3px 5px;
+        justify-content: end;
     }
 }
 .tabs-btn{

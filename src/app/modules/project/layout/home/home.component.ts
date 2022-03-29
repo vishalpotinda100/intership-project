@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
   projectJson=[
   
     {
-      "date":new Date("Mon Mar 25 2021 14:15:00 GMT+0530 (India Standard Time)"),
+      "date":new Date("Mon Mar 22 2022 14:15:00 GMT+0530 (India Standard Time)"),
       "title":"Angular",
       "organization":"Google",
       "assigneList":[
@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
       }
     },
     {
-      "date":new Date("Mon Dec 14 2021 8:54:00 GMT+0530 (India Standard Time)"),
+      "date":new Date("Mon Mar 28 2022 8:54:00 GMT+0530 (India Standard Time)"),
       "title":"React",
       "organization":"facebook",
       "assigneList":[

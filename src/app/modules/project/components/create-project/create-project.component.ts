@@ -49,6 +49,7 @@ export class CreateProjectComponent implements OnInit {
 submitHandler(items:NgForm){
 
   const {title,organization}=items.value;
+
   if(title.trim()==''){
     this.toastr.error('Please enter  title', 'Title is requied');
   }else if( organization.trim()==''){
@@ -58,9 +59,10 @@ submitHandler(items:NgForm){
     this.toastr.error('Please select at least one assignee','Assignee')
   }else{
     this.createdItem.emit(this.allAssigneeList)
+    this.toastr.success("Sucessfully created !")
   }
 
-
+ 
 
 }
 
@@ -74,9 +76,5 @@ assignFocus(){
 resetForm(){
   this.allAssigneeList={};
 }
-
-
-
-
 
 }

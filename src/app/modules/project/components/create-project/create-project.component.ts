@@ -12,11 +12,10 @@ export class CreateProjectComponent implements OnInit {
   @Output() createdItem=new EventEmitter();
   assign:boolean=false;
   milestoneBoolen:boolean=false;
-  date:Date=new Date();
   openCount:number=0;
   closedCount:number=0;
    allAssigneeList:any={
-    date:this.date,
+    date:new Date(),
     title:'',
     organization:'',
     assigneList:[],

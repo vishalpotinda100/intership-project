@@ -8,8 +8,8 @@ import { Component,EventEmitter, OnInit, Output } from '@angular/core';
 export class MilestoneComponent implements OnInit {
 
   @Output() selectedMilestone=new EventEmitter();
-  openList=[ { "id":"1", "task":" open Task1","isChecked":"false"},{ "id":"2", "task":" open Task1","isChecked":"false" }];
-  closedList=[{"id":"1", "task":"Closed task1","isChecked":"false"},{ "id":"2", "task":" Closed Task1","isChecked":"false"}];
+  openList=[ {  "task":" open Task1","isChecked":false},{  "task":" open Task1","isChecked":false }];
+  closedList=[{ "task":"Closed task1","isChecked":false},{  "task":" Closed Task1","isChecked":false}];
 
 
   milestoneList:any={

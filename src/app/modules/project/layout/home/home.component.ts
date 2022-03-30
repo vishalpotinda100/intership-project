@@ -19,8 +19,8 @@ export class HomeComponent implements OnInit {
         {"initial":"PP"}
       ],
       "milestone":{
-        "open":[ {"id":"1", "task":"Task1","isChecked":"false"},{"id":"2","task":"Task2","isChecked":"false"}],
-        "closed":[{"id":"1","task":"Closed task1","isChecked":"false"},{"id":"2","task":"Closed task2","isChecked":"false"}]
+        "open":[ { "task":"Task1","isChecked":false},{"task":"Task2","isChecked":false}],
+        "closed":[{"task":"Closed task1","isChecked":true},{"task":"Closed task2","isChecked":true}]
 
       }
     },
@@ -34,8 +34,8 @@ export class HomeComponent implements OnInit {
         {"initial":"RS"}
       ],
       "milestoneList":{
-        "open":[ {"id":"1", "task":"Task1","isChecked":"false"},{"id":"2","task":"Task2","isChecked":"false"}],
-        "closed":[{"id":"1","task":"Closed task1","isChecked":"false"},{"id":"2","task":"Closed task2","isChecked":"false"}]
+        "open":[ { "task":"Task1","isChecked":true},{"task":"Task2","isChecked":true}],
+        "closed":[{"task":"Closed task1","isChecked":false},{"task":"Closed task2","isChecked":true}]
 
       }
     }

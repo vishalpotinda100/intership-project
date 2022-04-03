@@ -1,5 +1,4 @@
 import { Component,Input, OnInit } from '@angular/core';
-import { MatCardXlImage } from '@angular/material/card';
 import {ThemePalette} from '@angular/material/core';
 import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
 @Component({
@@ -25,6 +24,12 @@ export class ListProjectComponent implements OnInit {
   console.log(this.cal)
     
   }
+
+
+
+
+
+  
 
   demo(old:any,today:any){
     const milisec=today.getTime()-old.getTime();
